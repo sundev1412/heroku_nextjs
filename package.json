@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $POST",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "6.14.12"
   }
 }
